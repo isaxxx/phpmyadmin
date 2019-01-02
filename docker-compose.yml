@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  phpmyadmin:
+    extra_hosts:
+      - local:192.168.0.0 # Local IP Address
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: local # Host Name (local or domain)
+      PMA_PORT: 8889 # Port Number
+      PMA_USER: user # User Name
+      PMA_PASSWORD: password # Password
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8888:80
