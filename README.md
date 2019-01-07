@@ -19,7 +19,8 @@ $ docker-compose down -v
 ### Port Forwarding
 
 ```
-$ ssh user@example.com -L 8889:mysql.example.com:3306 -i ./example.key -p 11111 -g
+$ ssh user@example.com -L 8889:mysql.example.com:3306 -i ./example.key -p 10022 -g
+$ ssh user@example.com -L 8889:localhost:3306 -i ./example.key -p 22 -g
 ```
 
 ### Check Local IP Address (MacOS)
